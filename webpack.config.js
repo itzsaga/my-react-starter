@@ -11,7 +11,6 @@ module.exports = () => ({
   output: {
     filename: '[name].[hash].js',
     path: path.resolve('./dist'),
-    // publicPath: '/',
   },
   module: {
     rules: [
@@ -32,5 +31,4 @@ module.exports = () => ({
     port: 3000,
     open: true,
   },
-  // target: 'web',
 })
