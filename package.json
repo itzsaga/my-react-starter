@@ -1,0 +1,23 @@
+{
+  "name": "my-react-starter",
+  "version": "1.0.0",
+  "description": "A starter React template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itzsaga/my-react-starter.git"
+  },
+  "keywords": [
+    "Node",
+    "React"
+  ],
+  "author": "Seth Alexander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itzsaga/my-react-starter/issues"
+  },
+  "homepage": "https://github.com/itzsaga/my-react-starter#readme"
+}
