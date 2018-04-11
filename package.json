@@ -7,11 +7,14 @@
     "build": "webpack",
     "clean": "rimraf dist node_modules",
     "start": "webpack-dev-server",
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "jest ./src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itzsaga/my-react-starter.git"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/enzyme.setup.js"
   },
   "keywords": [
     "Node",
