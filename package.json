@@ -4,6 +4,8 @@
   "description": "A starter React template",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "clean": "rimraf dist node_modules",
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
