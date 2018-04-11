@@ -1,5 +1,5 @@
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const nodeExternals = require('webpack-node-externals')
 
 module.exports = () => ({
   entry: {
@@ -17,12 +17,20 @@ module.exports = () => ({
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: ['node_modules'],
         use: [{ loader: "babel-loader" }],
       },
     ],
   },
-  externals: [
-    nodeExternals()
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: 'index.html'
+    }),
   ],
+  devServer: {
+    host: 'localhost',
+    port: 3000,
+    open: true,
+  },
+  // target: 'web',
 })
