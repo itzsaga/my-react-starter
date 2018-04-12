@@ -18,7 +18,9 @@ module.exports = () => ({
       {
         test: /\.js$/,
         exclude: ['node_modules'],
-        use: [{ loader: "babel-loader" }],
+        use: [{ 
+          loader: "babel-loader" 
+        }],
       },
       {
         test: /\.s(a|c)ss$/,
@@ -29,6 +31,12 @@ module.exports = () => ({
         }, {
           loader: 'sass-loader',
         }]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
       }
     ],
   },
