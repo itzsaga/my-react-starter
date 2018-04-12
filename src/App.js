@@ -6,6 +6,7 @@ class App extends Component {
     return (
       <div>
         <h1>Welcome to My Starter App</h1>
+        <h3>It has hot module reloading built in!</h3>
       </div>
     )
   }

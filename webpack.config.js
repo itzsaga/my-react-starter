@@ -1,6 +1,12 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const webpack = require('webpack')
+
+const extractSass = new ExtractTextPlugin({
+  filename: "[name].[contenthash].css",
+  disable: process.env.NODE_ENV === "development"
+});
 
 module.exports = () => ({
   entry: {
@@ -18,19 +24,17 @@ module.exports = () => ({
       {
         test: /\.js$/,
         exclude: ['node_modules'],
-        use: [{ 
-          loader: "babel-loader" 
-        }],
+        use: [{ loader: 'babel-loader' }],
       },
       {
         test: /\.s(a|c)ss$/,
         use: [{
-          loader: 'style-loader',
+          loader: 'style-loader'
         }, {
-          loader: 'css-loader',
+          loader: 'css-loader'
         }, {
-          loader: 'sass-loader',
-        }]
+          loader: 'sass-loader'
+        }],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -46,6 +50,7 @@ module.exports = () => ({
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    extractSass
   ],
   devServer: {
     host: 'localhost',
@@ -53,4 +58,5 @@ module.exports = () => ({
     open: true,
     hot: true,
   },
+  mode: 'development'
 })
