@@ -1,14 +1,8 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const webpack = require('webpack')
 
-const extractSass = new ExtractTextPlugin({
-  filename: "[name].[contenthash].css",
-  disable: process.env.NODE_ENV === "development"
-});
-
-module.exports = () => ({
+module.exports = {
   entry: {
     main: [
       'babel-polyfill',
@@ -50,13 +44,5 @@ module.exports = () => ({
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    extractSass
   ],
-  devServer: {
-    host: 'localhost',
-    port: 3000,
-    open: true,
-    hot: true,
-  },
-  mode: 'development'
-})
+}
