@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -43,5 +44,6 @@ module.exports = {
       template: 'index.html'
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(['dist']),
   ],
 }
