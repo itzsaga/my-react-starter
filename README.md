@@ -12,13 +12,13 @@ This is my personal React boilerplate. I utilize it as a base for projects so I 
 * A [Development Server](https://github.com/webpack/webpack-dev-server)
 * A configured [ESLint](https://eslint.org/)
 * Test ready via [Jest](https://facebook.github.io/jest/) with [Enzyme](http://airbnb.io/enzyme/)
---* If you want to get rid of this just `npm r jest enzyme enzyme-adapter-react-16` or `yarn remove jest enzyme enzyme-adapter-react-16` then delete `./test/`
+  * If you want to get rid of this just `npm r jest enzyme enzyme-adapter-react-16` or `yarn remove jest enzyme enzyme-adapter-react-16` then delete `./test/`
 
 ## What's Not Included
 * State Management like [Redux](https://redux.js.org/) or [MobX](https://mobx.js.org/)
---* To maintain this as a React started state management hasn't been included. That's a highly opinionated topic and this way I (and you) can play around with different state management systems and how they are installed and implemented.
+  * To maintain this as a React started state management hasn't been included. That's a highly opinionated topic and this way I (and you) can play around with different state management systems and how they are installed and implemented.
 * Types like [Flow](https://flow.org/) or [TypeScript](http://www.typescriptlang.org/)
---* While types are seen by many as awesome, they're not required. Add in what you please.
+  * While types are seen by many as awesome, they're not required. Add in what you please.
 
 ## Usage
 `git clone git@github.com:itzsaga/my-react-starter.git`  
