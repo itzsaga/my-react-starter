@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/itzsaga/my-react-starter.svg?branch=master)](https://travis-ci.org/itzsaga/my-react-starter)
+
 # My React Starter
 
 This is my personal React boilerplate. I utilize it as a base for projects so I can get something minimal started quickly. I decided to build this to teach myself some things and I encourage everyone to do the same. However, feel free to just use this if you so wish.
