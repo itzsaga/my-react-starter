@@ -1,4 +1,4 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/itzsaga/my-react-starter.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/itzsaga/my-react-starter.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/itzsaga/my-react-starter.svg?branch=master)](https://travis-ci.org/itzsaga/my-react-starter)
 
 # My React Starter
 
