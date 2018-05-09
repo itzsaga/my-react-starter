@@ -1,6 +1,6 @@
-# My React Starter
-
 [![Greenkeeper badge](https://badges.greenkeeper.io/itzsaga/my-react-starter.svg)](https://greenkeeper.io/)
+
+# My React Starter
 
 This is my personal React boilerplate. I utilize it as a base for projects so I can get something minimal started quickly. I decided to build this to teach myself some things and I encourage everyone to do the same. However, feel free to just use this if you so wish.
 
