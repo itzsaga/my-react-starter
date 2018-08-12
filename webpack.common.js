@@ -4,17 +4,18 @@ const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const devMode = process.env.NODE_ENV !== 'production'
+const paths = {
+  src: path.join(__dirname, "src"),
+  dist: path.join(__dirname, "dist"),
+};
 
 module.exports = {
   entry: {
-    main: [
-      'babel-polyfill',
-      './src/index.js',
-    ],
+    main: './src/index.js',
   },
   output: {
-    filename: '[name].[hash].js',
-    path: path.resolve('./dist'),
+    filename: devMode ? "js/[name].js" : "js/[name].[chunkhash:8].js",
+    path: paths.dist,
   },
   module: {
     rules: [
@@ -28,23 +29,31 @@ module.exports = {
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader'
+          'sass-loader',
         ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
-        ]
-      }
+          'file-loader',
+        ],
+      },
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(paths.dist),
     new HtmlWebPackPlugin({
-      template: 'index.html'
+      template: 'index.html',
+      inject: true,
+      hash: false,
+      minify: {
+        removeComments: devMode ? false : true,
+        collapseWhitespace: devMode ? false : true,
+        minifyJS: devMode ? false : true,
+        minifyCSS: devMode ? false : true,
+      },
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new CleanWebpackPlugin(['dist']),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',

@@ -5,15 +5,19 @@ module.exports = merge(common, {
   mode: 'production',
   optimization: {
     splitChunks: {
-      chunks: 'all',
       cacheGroups: {
         styles: {
           name: 'styles',
           test: /\.s?[ac]ss$/,
           chunks: 'all',
-          enforce: true
-        }
-      }
-    }
-  }
+          enforce: true,
+        },
+        commons: {
+          test: /[\\/]node_modules[\\/]/i,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
 })
