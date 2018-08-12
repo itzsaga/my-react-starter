@@ -7,6 +7,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
+    "bstart": "bsb -make-world -w",
     "test": "jest ./test"
   },
   "repository": {
@@ -30,7 +31,8 @@
   "homepage": "https://github.com/itzsaga/my-react-starter#readme",
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "reason-react": "^0.5.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -41,6 +43,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "bs-platform": "^4.0.3",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "enzyme": "^3.3.0",
