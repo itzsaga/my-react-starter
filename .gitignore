@@ -3,3 +3,8 @@ node_modules/
 
 # Project
 dist/
+
+# Reason
+.merlin
+.bsb.lock
+lib/*
