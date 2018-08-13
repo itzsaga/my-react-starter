@@ -1,4 +1,3 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -25,14 +24,6 @@ module.exports = {
         use: [{ loader: 'babel-loader' }],
       },
       {
-        test: /\.s?[ac]ss$/,
-        use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
@@ -42,21 +33,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(paths.dist),
-    new HtmlWebPackPlugin({
-      template: 'index.html',
-      inject: true,
-      hash: false,
-      minify: {
-        removeComments: devMode ? false : true,
-        collapseWhitespace: devMode ? false : true,
-        minifyJS: devMode ? false : true,
-        minifyCSS: devMode ? false : true,
-      },
-    }),
     new webpack.HotModuleReplacementPlugin(),
-    new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    }),
   ],
 }
