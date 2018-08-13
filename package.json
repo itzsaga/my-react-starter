@@ -7,7 +7,8 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
-    "bstart": "bsb -make-world -w",
+    "bsbuild": "bsb -make-world",
+    "bsstart": "bsb -make-world -w",
     "test": "jest ./test"
   },
   "repository": {
