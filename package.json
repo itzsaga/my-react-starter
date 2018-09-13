@@ -30,7 +30,7 @@
   "homepage": "https://github.com/itzsaga/my-react-starter#readme",
   "dependencies": {
     "react": "^16.5.1",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.5.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
