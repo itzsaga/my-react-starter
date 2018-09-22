@@ -6,8 +6,8 @@ This is my personal React boilerplate. I utilize it as a base for projects so I 
 
 ## What's Included
 
-* [React](https://reactjs.org/) ^16.4.0
-* [Babel](https://babeljs.io/) with the [Stage 2 preset](https://babeljs.io/docs/plugins/preset-stage-2/)
+* [React](https://reactjs.org/) ^16.5.2
+* [Babel](https://babeljs.io/)
 * [webpack](https://webpack.js.org/) for asset bundling
 * Styles using [Sass](http://sass-lang.com/)
 * Hot Module Replacement wit [React Hot Loader](https://github.com/gaearon/react-hot-loader)
