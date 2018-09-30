@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { hot } from 'react-hot-loader'
 
 class App extends Component {
   render() {
@@ -7,9 +6,10 @@ class App extends Component {
       <div>
         <h1>Welcome to My Starter App</h1>
         <h3>It has hot module reloading built in!</h3>
+        <h4>With Parcel!</h4>
       </div>
     )
   }
 }
 
-export default hot(module)(App)
+export default App
