@@ -27,11 +27,6 @@ function make(name, _) {
         ];
 }
 
-var jsComponent = ReasonReact.wrapReasonForJs(component, (function (jsProps) {
-        return make(jsProps.name, /* array */[]);
-      }));
-
 exports.component = component;
 exports.make = make;
-exports.jsComponent = jsComponent;
 /* component Not a pure module */

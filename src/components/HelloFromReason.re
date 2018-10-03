@@ -5,7 +5,7 @@ let make = (~name, _children) => {
   render: _self => <div> (ReasonReact.string("Hello " ++ name ++ " from a ReasonReact component :-)")) </div>,
 };
 
-[@bs.deriving abstract]
+/* [@bs.deriving abstract]
 type jsProps = {
   name: string,
 };
@@ -16,4 +16,4 @@ let jsComponent =
       ~name=jsProps->nameGet,
       [||],
     )
-  );
+  ); */
