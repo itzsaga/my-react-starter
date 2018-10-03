@@ -11,18 +11,6 @@ module.exports = merge(common, {
     open: true,
     hot: true,
   },
-  module: {
-    rules: [
-      {
-        test: /\.s?[ac]ss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-    ],
-  },
   plugins: [
     new HtmlWebPackPlugin({
       template: 'index.html',

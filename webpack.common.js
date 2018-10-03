@@ -1,7 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const devMode = process.env.NODE_ENV !== 'production'
 const paths = {
   src: path.join(__dirname, "src"),
@@ -10,7 +9,7 @@ const paths = {
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './src/index.bs.js',
   },
   output: {
     filename: devMode ? "js/[name].js" : "js/[name].[chunkhash:8].js",
