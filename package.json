@@ -8,21 +8,16 @@
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "bsbuild": "bsb -make-world",
-    "bsstart": "bsb -make-world -w",
-    "test": "jest ./test"
+    "bsstart": "bsb -make-world -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itzsaga/my-react-starter.git"
   },
-  "jest": {
-    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js",
-    "setupFiles": [
-      "raf/polyfill"
-    ]
-  },
   "keywords": [
-    "React"
+    "React",
+    "ReasonReact",
+    "ReasonML"
   ],
   "author": "Seth Alexander",
   "license": "MIT",
