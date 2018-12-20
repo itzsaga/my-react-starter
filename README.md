@@ -6,7 +6,7 @@ This is my personal React boilerplate. I utilize it as a base for projects so I 
 
 ## What's Included
 
-* [React](https://reactjs.org/) ^16.5.2
+* [React](https://reactjs.org/) ^16.7.2
 * [Babel](https://babeljs.io/)
 * [webpack](https://webpack.js.org/) for asset bundling
 * Styles using [Sass](http://sass-lang.com/)
