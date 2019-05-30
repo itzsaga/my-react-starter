@@ -14,7 +14,7 @@ This is my personal React boilerplate. I utilize it as a base for projects so I 
 * A [Development Server](https://github.com/webpack/webpack-dev-server)
 * A configured [ESLint](https://eslint.org/)
 * Test ready via [Jest](https://facebook.github.io/jest/) with [Enzyme](http://airbnb.io/enzyme/)
-  * If you want to get rid of this just `npm r jest enzyme enzyme-adapter-react-16` or `yarn remove jest enzyme enzyme-adapter-react-16` then delete `./test/`
+  * If you want to get rid of this just `yarn remove jest enzyme enzyme-adapter-react-16` then delete `./test/`
 
 ## What's Not Included
 * State Management like [Redux](https://redux.js.org/) or [MobX](https://mobx.js.org/)
@@ -24,10 +24,10 @@ This is my personal React boilerplate. I utilize it as a base for projects so I 
 
 ## Usage
 `git clone git@github.com:itzsaga/my-react-starter.git`  
-`npm i` or `yarn`  
-`npm start` or `yarn start`
+`yarn`  
+`yarn start`
 
-When you're ready to deploy run `npm build` or `yarn build` to get your production ready files output to the `/dist` directory.
+When you're ready to deploy run `yarn build` to get your production ready files output to the `/dist` directory.
 
 ## License
 
