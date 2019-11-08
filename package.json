@@ -57,7 +57,7 @@
     "jest": "^23.0.1",
     "jest-runner-eslint": "^0.7.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.0",
     "raf": "^3.4.0",
     "react-hot-loader": "^4.12.11",
     "react-test-renderer": "^16.9.0",
